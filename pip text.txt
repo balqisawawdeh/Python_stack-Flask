@@ -1,0 +1,32 @@
+1. pip list 
+2. deactivate : OK
+3. pip3 list : it is the same list
+4. pip install Django==2.2.4 : Collecting ... started downloding... Successfully installed Django-2.2.4 pytz-2024.1
+5. pip freeze : the difference between freeze and list is how to display the data , list like a table of two column , and freeze one column had name and version in the same line.
+6. pip freeze> requirements.txt: the result is:
+asgiref==3.7.2
+blinker==1.7.0
+click==8.1.7
+colorama==0.4.6
+Django==2.2.4
+Flask==3.0.2
+itsdangerous==2.1.2
+Jinja2==3.1.3
+MarkupSafe==2.1.5
+pytz==2024.1
+sqlparse==0.4.4
+tzdata==2024.1
+Werkzeug==3.0.1
+
+7. pip uninstalling Django:
+Found existing installation: Django 2.2.4
+Uninstalling Django-2.2.4:
+  Would remove:
+    c:\users\balqi\documents\myaxsos\python_stack\my_environments\py3env\lib\site-packages\django-2.2.4.dist-info\*
+    c:\users\balqi\documents\myaxsos\python_stack\my_environments\py3env\lib\site-packages\django\*
+    c:\users\balqi\documents\myaxsos\python_stack\my_environments\py3env\scripts\django-admin.exe
+    c:\users\balqi\documents\myaxsos\python_stack\my_environments\py3env\scripts\django-admin.py
+Proceed (Y/n)? y
+  Successfully uninstalled Django-2.2.4
+
+8. pip show Django : WARNING: Package(s) not found: Django
