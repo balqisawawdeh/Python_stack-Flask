@@ -17,9 +17,11 @@ def checkout():
     first_name=request.form['first_name']
     last_name=request.form['last_name']
     id=request.form['student_id']
+    sum =int(Strawberry)+int(Raspberry)+int(Apple)
+
 
     return render_template("checkout.html",Strawberry=Strawberry,Raspberry=Raspberry,
-                           Apple=Apple,first_name=first_name,last_name=last_name,id=id,date=date_time,)
+                           Apple=Apple,first_name=first_name,last_name=last_name,id=id,Now=date_time,Sum=sum)
 
 @app.route('/fruits')         
 def fruits():
