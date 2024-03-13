@@ -9,11 +9,11 @@ def index():
 def create_user():
     print("Got Post Info")
     print(request.form)
-    name = request.form['name']
+    Name = request.form['name']
     location = request.form['location']
     language=request.form['language']
     comment=request.form['comment']
-    return render_template("results.html", name=name, location=location,language=language,comment=comment)
+    return render_template("results.html", name=Name, location=location,language=language,comment=comment)
 
 if __name__ == "__main__":
     app.run(debug=True)
