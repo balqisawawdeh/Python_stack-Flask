@@ -17,6 +17,7 @@ def addtwo():
     return redirect('/')
 @app.route('/reset')
 def reset():
-    session['count']=0
+#    session['count']=0
+    session.clear()
     return redirect('/')
 app.run(debug=True)

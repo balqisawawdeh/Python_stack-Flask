@@ -1,0 +1,39 @@
+#main{
+    height: 500px;
+    width: 80%;
+    margin: 50px 50px 50px 100px;
+    padding: 50px;
+    border: 1px solid black;
+    text-align: center;
+    display: block;
+    justify-content: center;
+}           
+.box{
+    color: white;
+    border: 2px solid black;
+    font-weight: bold;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    margin: 15px 400px;
+    padding-top: 80px;
+}
+.lose{
+    background-color: #CE2818;
+}
+.win{
+    background-color: #009E12;
+}
+button{
+    border: 2px solid black;
+    margin-top: 15px;
+}
+input{
+    margin-top: 5px;
+    text-align: center;
+}
+a, a:hover{
+    color: black;
+    font-family: 'Tahoma';
+    text-decoration: none;
+}
