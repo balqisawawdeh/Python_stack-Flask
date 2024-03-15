@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Gold</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Your Gold :{{Date_time}}</h2>
+        <label>{{session['total_gold']}}</label>
+        <div class="Main">
+        <form class="form" action="/process_money" method="post">
+            <h2>Farm</h2>
+            <div><p>(earns 10-20 golds)</p></div>
+            <div>
+                <input type="hidden" name="building" value="farm" />
+                <input type="submit" value="Find Gold!"/>
+            </div>
+        </form>
+        
+        <form class="form" action="/process_money" method="post">
+            <h2>Cave</h2>
+            <div><p>(earns 5-10 golds)</p></div>
+            <div>
+                <input type="hidden" name="building" value="cave" />
+                <input type="submit" value="Find Gold!"/>
+            </div>
+        </form>
+        
+        <form class="form" action="/process_money" method="post">
+            <h2>House</h2>
+            <div><p>(earns 2-5 golds)</p></div>
+            <div>
+                <input type="hidden" name="building" value="house" />
+                <input type="submit" value="Find Gold!"/>
+            </div>
+        </form>
+        
+        <form class="form" action="/process_money" method="post">
+            <h2>Cafeteria</h2>
+            <div><p>(earns 0-50 golds)</p></div>
+            <div>
+                <input type="hidden" name="building" value="Cafeteria" />
+                <input type="submit" value="Find Gold!"/>
+            </div>
+        </form>
+        </div>
+        <h2>Activities</h2><br><br>
+        <textarea name="activities">your activities {{session['message']|safe}} / {{date_time}}</textarea>
+    </div>       
+</body>
+</html>
